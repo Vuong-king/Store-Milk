@@ -1,5 +1,7 @@
 import { Table } from "antd";
 import { useState } from "react";
+import Header from "../../components/header-admin";
+import "./index.scss";
 
 
 function MilksManagement() {
@@ -16,8 +18,11 @@ function MilksManagement() {
    
     return (
         <div>
-            <Table columns={columns} dataSource={dataSource}/>
+        <Header />
+        <div className="table">
+          <Table columns={columns} dataSource={dataSource} />
         </div>
+      </div>    
     );
 
 }

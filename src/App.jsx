@@ -15,13 +15,13 @@ function App() {
           path: "/",
           element: <HomePage/>,
         },
-        {
-          path: "/milk-management",
-          element: <MilksManagement/>,
-        },
-    
       ]
-    }
+
+    },
+    {
+      path: "/milk-management",
+      element: <MilksManagement/>,
+    },
 
   ]);
   

@@ -1,14 +1,8 @@
-//import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import './index.scss';
-
-// import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
 
 //Props
@@ -21,12 +15,13 @@ import { Autoplay, Pagination } from 'swiper/modules';
 export default function Carousel({numberOfSlide}) {
   return (
     <>
+      <div className='carousel__swiper'>
       <Swiper 
       slidesPerView={numberOfSlide}
       spaceBetween={30}
       pagination={true} 
       modules={[Pagination,Autoplay]} 
-      className="carosel" 
+      className="carousel" 
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
@@ -62,6 +57,12 @@ export default function Carousel({numberOfSlide}) {
           />
         </SwiperSlide>
       </Swiper>
+      </div>
+      <div className='carousel__wellcome' >
+        <h3>CHÀO MỪNG BẠN ĐẾN VỚI</h3>
+        <h1>HAPPY MOTHER&BABY</h1>
+        <button>KHÁM PHÁ NGAY</button>
+      </div>
     </>
   );
 }
