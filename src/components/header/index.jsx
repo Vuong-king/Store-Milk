@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import { SearchOutlined, UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
+import { SearchOutlined, UserOutlined, ShoppingCartOutlined,CloseOutlined } from '@ant-design/icons';
 import "./index.scss";
+import { useState } from "react";
 function Header() {
 
-
+    const [isOpenSearch, setIsOpenSearch] =  useState(false);
 
     return (
         <header className="header">
@@ -34,7 +35,7 @@ function Header() {
                         </li>
                     </div>
                     <div className="header__icon">
-                        <li>
+                        <li onClick={() =>setIsOpenSearch(true)}>
                             <SearchOutlined />
                         </li>
                         <li>
@@ -48,6 +49,10 @@ function Header() {
                     </div>
                 </ul>
             </nav>
+            <div className={`header__search ${isOpenSearch ? "active" : " "}`}>
+                <input type="text" placeholder="Search a milk..." />
+                <CloseOutlined onClick={() => setIsOpenSearch(false)} />
+            </div>
         </header>
     )
 

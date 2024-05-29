@@ -33,6 +33,8 @@ z-index: 10;
         }
     }
  }
+
+ 
 }
 
 .header__icon{
@@ -40,3 +42,24 @@ z-index: 10;
     display: flex;
     gap: 20px;
 }
+
+.header__search{
+    position: absolute;
+      top:-100%;
+      left: 0;
+      right: 0;
+      padding: 15px 200px;
+      background-color: #fff;
+      transition: none 1s;
+
+      display: flex;
+      input{
+        flex-grow: 1;
+        border: none;
+        outline: none;
+      }
+      &.active{
+        top: 100%;
+        transition: all 1s;
+      }
+ }
