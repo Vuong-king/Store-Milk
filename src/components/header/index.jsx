@@ -38,9 +38,11 @@ function Header() {
                         <li onClick={() =>setIsOpenSearch(true)}>
                             <SearchOutlined />
                         </li>
+                        <Link to="/cart">
                         <li>
                             <ShoppingCartOutlined />
                         </li>
+                        </Link>
                         <li>
                             <UserOutlined />
                         </li>
