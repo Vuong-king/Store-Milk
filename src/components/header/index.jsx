@@ -40,9 +40,11 @@ function Header() {
                         <li>
                             <ShoppingCartOutlined />
                         </li>
-                        <li>
+                        <Link to="/login">
+                        <li >
                             <UserOutlined />
                         </li>
+                        </Link>
                     </div>
                 </ul>
             </nav>
