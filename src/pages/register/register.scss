@@ -6,10 +6,33 @@ $input-border-color: #ddd;
 $input-focus-border-color: $primary-color;
 $button-color: #fff;
 
+.header__register {
+    display: flex;
+    padding: 0;
+    background-color: #FFF4FC;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+
+        font-size: 22px;
+        margin-top: 50px;
+        position: relative;
+        padding-left: 20px; // Adds space for the border
+
+        border-left: 2px solid #0000003f; // Border thickness and color
+        padding-top: 10px; // Adds space above the text
+        padding-bottom: 10px;
+    }
+}
+
 .register {
     background: url('/src/assets/ok.jpeg') no-repeat;
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +60,21 @@ $button-color: #fff;
             text-align: center;
         }
 
+        p {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
         .input-box {
             display: flex;
             flex-direction: column;
@@ -51,7 +89,7 @@ $button-color: #fff;
                 background-color: #fff;
 
                 &:focus {
-                    border-color: $input-focus-border-color;
+                    border-color: $input-focus-border-color; //khi chọn thì khung input phát sáng
                     outline: none;
                 }
             }

@@ -2,6 +2,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MilksManagement from "./pages/milks-managemnet";
 import HomePage from "./pages/home";
 import Layout from "./components/layout";
+import Cart from "./pages/cart";
+import Login from "./pages/login";
+import Register from "./pages/register";
 
 function App() {
 
@@ -23,6 +26,18 @@ function App() {
       path: "/milk-management",
       element: <MilksManagement/>,
     },
+    {
+      path: "/cart",
+      element: <Cart/>
+    },
+    {
+      path: "/login",
+      element: <Login/>
+    },
+    {
+      path:"/register",
+      element:<Register/>
+    }
 
   ]);
   

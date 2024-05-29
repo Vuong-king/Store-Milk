@@ -42,6 +42,8 @@ function Header() {
                         <li>
                             <ShoppingCartOutlined />
                         </li>
+                        </Link>
+                        <Link to="/login">
                         <li>
                             <UserOutlined />
                         </li>
