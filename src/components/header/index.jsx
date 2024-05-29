@@ -42,10 +42,10 @@ function Header() {
                         <li>
                             <ShoppingCartOutlined />
                         </li>
-                        </Link>
                         <li>
                             <UserOutlined />
                         </li>
+                        </Link>
                     </div>
                 </ul>
             </nav>
