@@ -15,7 +15,6 @@ function Header() {
                     />
                 </Link>
             </div>
-
             <nav className="header__nav">
                 <ul>
                     <div className="sbv">
