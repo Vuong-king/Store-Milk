@@ -1,0 +1,177 @@
+// .order-list {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     padding: 20px;
+//     font-family: Arial, sans-serif;
+  
+//     &__header {
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+//       margin-bottom: 20px;
+  
+//       h2 {
+//         font-size: 1.5rem;
+//       }
+  
+//       .create-order-button {
+//         background-color: #007bff;
+//         color: white;
+//         border: none;
+//         padding: 10px 20px;
+//         border-radius: 5px;
+//         cursor: pointer;
+//       }
+//     }
+  
+//     &__filters {
+//       display: flex;
+//       align-items: center;
+//       margin-bottom: 20px;
+  
+//       .filter-button,
+//       .save-filter-button {
+//         background-color: #007bff;
+//         color: white;
+//         border: none;
+//         padding: 10px 20px;
+//         border-radius: 5px;
+//         cursor: pointer;
+//         margin-right: 10px;
+//       }
+  
+//       .search-input {
+//         flex-grow: 1;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         margin-right: 10px;
+//       }
+//     }
+  
+//     .order-table {
+//       width: 100%;
+//       border-collapse: collapse;
+  
+//       th,
+//       td {
+//         padding: 10px;
+//         border: 1px solid #ddd;
+//         text-align: left;
+//       }
+  
+//       th {
+//         background-color: #f2f2f2;
+//       }
+  
+//       .status {
+//         &.in-progress {
+//           color: blue;
+//         }
+//         &.cancelled {
+//           color: red;
+//         }
+//       }
+  
+//       .payment {
+//         &.pending {
+//           color: orange;
+//         }
+//       }
+  
+//       .delivery {
+//         &.delivered {
+//           color: green;
+//         }
+//         &.cancelled {
+//           color: red;
+//         }
+//       }
+  
+//       .cod {
+//         &.received {
+//           color: green;
+//         }
+//         &.not-received {
+//           color: orange;
+//         }
+//       }
+  
+//       .cancelled {
+//         background-color: #ffe5e5;
+//       }
+//     }
+//   }
+
+.order-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+    &__header {
+        margin-bottom: 20px;
+        h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .status {
+        &.in-progress {
+            color: blue;
+        }
+        &.cancelled {
+            color: red;
+        }
+    }
+
+    .payment {
+        &.pending {
+            color: orange;
+        }
+    }
+
+    .delivery {
+        &.delivered {
+            color: green;
+        }
+        &.cancelled {
+            color: red;
+        }
+    }
+
+    .cod {
+        &.received {
+            color: green;
+        }
+        &.not-received {
+            color: red;
+        }
+    }
+
+    .cancelled {
+        background-color: #fdd;
+        color: #999;
+    }
+}
